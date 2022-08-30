@@ -67,16 +67,19 @@ int main()
     vector<double> homework;
     read_hw(cin, homework);
 
-    //calculate final grade
     try
     {
+        //calculate final grade
         double final_grade = grade(midterm, final, homework);
+
+        // display result
         streamsize prec = cout.precision();
         cout << "Your final grade is: " << setprecision(3)
         << final_grade << setprecision(prec) << endl;
     }
     catch(const std::exception& e)
     {
+        //display error
         std::cerr << e.what() << '\n';
     }
     
