@@ -1,7 +1,10 @@
-#include <iostream>
-#include <vector>
 #include <algorithm>
 #include <iomanip>
+#include <ios>
+#include <iostream>
+#include <stdexcept>
+#include <string>
+#include <vector>
 using namespace std;
 
 struct Student_info
@@ -81,7 +84,7 @@ int main()
     Student_info record;
     string::size_type maxlen = 0;
 
-    while(read(cin, record))
+    while (read(cin, record)) 
     {
         maxlen = max(maxlen, record.name.size());
         students.push_back(record);
@@ -89,21 +92,23 @@ int main()
 
     sort(students.begin(), students.end(), compare);
 
-    //calculate final grade
-    try
+    for (vector<Student_info>::size_type i = 0; i != students.size(); ++i)
     {
-        for(int i = 0; i < students.size(); ++i)
+        cout << students[i].name << string(maxlen + 1 - students[i].name.size(), ' ');
+        
+        try 
         {
             double final_grade = grade(students[i]);
             streamsize prec = cout.precision();
-            cout << students[i].name << string(maxlen + 1 - students[i].name.size(), ' ') 
-            << setprecision(3) << final_grade << setprecision(prec) << endl;
+            cout << setprecision(3) << final_grade
+            << setprecision(prec);
+        } 
+        catch (domain_error e) 
+        {
+            cout << e.what();
         }
+
+        cout << endl;
     }
-    catch(const std::exception& e)
-    {
-        std::cerr << e.what() << '\n';
-    }
-    
     return 0;
 }

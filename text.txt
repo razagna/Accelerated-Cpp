@@ -1,0 +1,7 @@
+Smith 93 91 47 90 92 73 100 87
+Carpenter 75 90 87 92 93 60 0 98
+
+Carpenter 86.8
+Smith     90.4
+
+g++ driver.cpp Student_info.cpp median.cpp grade.cpp
