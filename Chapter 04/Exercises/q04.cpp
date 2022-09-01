@@ -5,12 +5,16 @@ using namespace std;
 
 int main()
 {
-    double max = 100;
-    int maxlen = to_string(max*max).size();
+    double max = 1000;
+    const streamsize decimal = 3;
+    streamsize maxlen = to_string((int)max).size() + decimal + 1;
+    streamsize maxsq = to_string((int)(max * max)).size() + decimal + 2;
 
-    for(double i = 1; i < max; ++i)
+    for(double i = 1; i <= max; ++i)
     {
-        cout << setw(4) << i << setw(maxlen) << i*i << endl;
+        streamsize prec = cout.precision();
+        cout << fixed << setw(maxlen) << setprecision(decimal) 
+        << i << setw(maxsq) << i*i << setprecision(prec) << endl;
     }
 
     return 0;

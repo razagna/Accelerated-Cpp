@@ -15,5 +15,15 @@ The solution can be found in [q02](q02.cpp).
 The left and right columns will blend as the widths of both cease to hold the numbers as they grow. The updated program can be found in [q03](q03.cpp).
 
 #### Q4-4. Now change your squares program to use double values instead of `int`s. Use manipulators to manage the output so that the values line up in columns.
+The solution can be found in [q04](q04.cpp).
 
 #### Q4-5. Write a function that reads words from an input stream and stores them in a vector. Use that function both to write programs that count the number of words in the input, and to count how many times each word occurred.
+
+#### Q4-6. Rewrite the `Student_info` structure to calculate the grades immediately and store only the final grade.
+
+#### Q4-7. Write a program to calculate the average of the numbers stored in a `vector<double>`.
+
+#### Q4-8. If the following code is legal, what can we infer about the return type of f?
+```c++
+double d = f()[n];
+```
