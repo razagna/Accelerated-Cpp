@@ -28,8 +28,10 @@ Only the first solutions preserves the order at which words appear. The solution
 The solutions can be found in [q06](q06.cpp).
 
 #### Q4-7. Write a program to calculate the average of the numbers stored in a `vector<double>`.
+The solutions can be found in [q07](q07.cpp).
 
 #### Q4-8. If the following code is legal, what can we infer about the return type of f?
 ```c++
 double d = f()[n];
 ```
+For this code to be legal, the function `f()` must return a `vector<double>` such that when we try to access the nth element in it, we get a `double` value.
