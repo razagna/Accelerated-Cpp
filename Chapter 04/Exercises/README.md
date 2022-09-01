@@ -25,6 +25,7 @@ To count the number of words, we simply print the size of the `vector`. As for c
 Only the first solutions preserves the order at which words appear. The solutions can be found in [q05](q05.cpp).
 
 #### Q4-6. Rewrite the `Student_info` structure to calculate the grades immediately and store only the final grade.
+The solutions can be found in [q06](q06.cpp).
 
 #### Q4-7. Write a program to calculate the average of the numbers stored in a `vector<double>`.
 
