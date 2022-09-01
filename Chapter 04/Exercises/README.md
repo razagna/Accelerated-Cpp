@@ -18,11 +18,11 @@ The left and right columns will blend as the widths of both cease to hold the nu
 The solution can be found in [q04](q04.cpp).
 
 #### Q4-5. Write a function that reads words from an input stream and stores them in a `vector`. Use that function both to write programs that count the number of words in the input, and to count how many times each word occurred.
-To count the number of words, we simply print the size of the `vector`. As for counting word repetitions, two `count` functions were implemented:
-- one that loops through the word list counting every repetition and replacing it with an empty string
-- one that sorts the words list first to group similar words and then counts them
+To count the number of words, we simply print the size of the `vector`. As for counting word repetitions, two functions were implemented:
+- `iter_count`: loops through the word list counting every repetition and replacing it with an empty string.
+- `sort_count`: sorts the words list first to group similar words and then counts them.
 
-The solution can be found in [q05](q05.cpp).
+Only the first solutions preserves the order at which words appear. The solutions can be found in [q05](q05.cpp).
 
 #### Q4-6. Rewrite the `Student_info` structure to calculate the grades immediately and store only the final grade.
 
