@@ -14,10 +14,15 @@ The solution can be found in [q02](q02.cpp).
 #### Q4-3. What happens if we rewrite the previous program to allow values up to but not including 1000 but neglect to change the arguments to `setw`? Rewrite the program to be more robust in the face of changes that allow `i` to grow without adjusting the `setw` arguments.
 The left and right columns will blend as the widths of both cease to hold the numbers as they grow. The updated program can be found in [q03](q03.cpp).
 
-#### Q4-4. Now change your squares program to use double values instead of `int`s. Use manipulators to manage the output so that the values line up in columns.
+#### Q4-4. Now change your squares program to use `double` values instead of `int`s. Use manipulators to manage the output so that the values line up in columns.
 The solution can be found in [q04](q04.cpp).
 
-#### Q4-5. Write a function that reads words from an input stream and stores them in a vector. Use that function both to write programs that count the number of words in the input, and to count how many times each word occurred.
+#### Q4-5. Write a function that reads words from an input stream and stores them in a `vector`. Use that function both to write programs that count the number of words in the input, and to count how many times each word occurred.
+To count the number of words, we simply print the size of the `vector`. As for counting word repetitions, two `count` functions were implemented:
+- one that loops through the word list counting every repetition and replacing it with an empty string
+- one that sorts the words list first to group similar words and then counts them
+
+The solution can be found in [q05](q05.cpp).
 
 #### Q4-6. Rewrite the `Student_info` structure to calculate the grades immediately and store only the final grade.
 
