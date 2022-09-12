@@ -1,13 +1,7 @@
 #include <iostream>
-#include <list>
-#include "Student_info.h"
+#include "fail_grades.h"
 #include "grade.h"
 using namespace std;
-
-bool fgrade(Student_info& s)
-{
-    return grade(s) < 60;
-}
 
 void fgrade_test()
 {
@@ -19,25 +13,6 @@ void fgrade_test()
     cout << "You have " << (fgrade(student) ? "failed." : "passed!") << endl;
 }
 
-vector<Student_info> extract_fail(vector<Student_info>& students)
-{
-    vector<Student_info> fail;
-    vector<Student_info>::iterator iter = students.begin();
-
-    while(iter != students.end())
-    {
-        if(fgrade(*iter))
-        {
-            fail.push_back(*iter);
-            students.erase(iter);
-        }
-        else 
-            ++iter;
-    }
-
-    return fail;
-}
-
 void extract_fail_test(vector<Student_info> students)
 {
     cout << "There are " << students.size() << " students in total:" << endl;
@@ -46,15 +21,12 @@ void extract_fail_test(vector<Student_info> students)
 
     cout << students.size() << " student(s) have passed, and they are:" << endl;
     for(vector<Student_info>::size_type i = 0; i != students.size(); ++i)
-    {
         cout << "- " << students[i].name << " scored " << grade(students[i]) << endl;
-    }
 
     cout << "And " << failures.size() << " student(s) have failed, and they are:" << endl;
     for(vector<Student_info>::size_type i = 0; i != failures.size(); ++i)
-    {
         cout << "- " << failures[i].name << " scored " << grade(failures[i]) << endl;
-    }
+    
 }
 
 int main()
