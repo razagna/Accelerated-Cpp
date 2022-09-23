@@ -8,8 +8,8 @@ using namespace std;
 
 int shift(const vector<string>& v)
 {  
-    int count = 0;
-    int maxlen = 0;
+    int count = 0, maxlen = 0;
+
     for (int i = 0; i != v.size(); ++i)
     {
         if(v[i].size() > maxlen)
