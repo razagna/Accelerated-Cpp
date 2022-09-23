@@ -1,4 +1,5 @@
 #include <iostream>
+#include <algorithm>
 #include <vector>
 #include <string>
 #include "permuted_index.hpp"
@@ -7,21 +8,21 @@ using namespace std;
 int main()
 {
     vector<string> res;
-    vector<string> in = {"the quick brown fox", "jumped over the lazy dog", "and ran to his home in the hills", "leaving traces of breadcrumbs"};
-    
+    vector<string> in = {"the quick brown fox", "jumped over the lazy dog", "and waved back at us"};
+    int gap = shift(in);
+
     for(int i = 0; i != in.size(); ++i)
     {     
-        vector<string> rot = rotate(in[i]);
-        vector<string> unrot = unrotate(in[i], rot, shift(in));
-        res.insert(res.end(), unrot.begin(), unrot.end());    
+        string original = in[i];
+        vector<string> rotated = rotate(original);
+        vector<string> unrotated = unrotate(original, rotated, gap);
+        res.insert(res.end(), unrotated.begin(), unrotated.end());    
     }
     
-    // sort(res.begin(), res.end(), compare);
+    sort(res.begin(), res.end(), compare);
     
-    
-    // for(int i=0; i!= res.size(); ++i)
-    //     cout << res[i] << endl;
-    
-    cout << "Tesing permuted index: " << endl;
+    for(int i=0; i != res.size(); ++i)
+        cout << res[i] << endl;
+
     return 0;
 }
