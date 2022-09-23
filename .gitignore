@@ -1,4 +1,8 @@
 all_files/
+Cxxdroid/
+CMake Tutorial/
+
+**/build
 
 # Prerequisites
 *.d
