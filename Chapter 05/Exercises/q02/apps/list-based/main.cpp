@@ -1,6 +1,7 @@
 #include <iostream>
 #include <iomanip>
 #include <vector>
+#include <list>
 #include <string>
 #include <algorithm>
 #include "median.hpp"
@@ -11,7 +12,7 @@ using namespace std;
 
 int main()
 {
-    vector<Student_info> students;
+    list<Student_info> students;
     Student_info record;
     string::size_type maxlen = 0;
     
@@ -20,13 +21,13 @@ int main()
     {
         maxlen = max(maxlen, record.name.size());
         students.push_back(record);
-    } 
+    }
     
-    sort(students.begin(), students.end(), compare);
-    
-    vector<Student_info> failed = extract_fails(students);
-    for(int i=0; i != failed.size(); ++i)
-        cout << failed[i].name << " has failed with a grade of " << grade(failed[i]) << endl;
+    //sort(students.begin(), students.end(), compare);
+
+    list<Student_info> failed = extract_fails(students);
+    for(list<Student_info>::const_iterator i = failed.begin(); i != failed.end(); ++i)
+        cout << i->name << " has failed with a grade of " << grade(*i) << endl;
     
     return 0;
 }
