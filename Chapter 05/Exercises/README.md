@@ -1,5 +1,8 @@
+#### Q5-0. Compile, execute, and test the programs in this chapter.
+The test programs for this chapter can be viewed in the [Examples](../Examples) folder.
+
 #### Q5-1. Design and implement a program to produce a permuted index.
-The phrases have been sorted after un-rotating them using a function that compares the first letter of each phrase after the separator.
+The phrases have been sorted after un-rotating them using a function that compares the first letter of each phrase after the separator. The algorithm helper functions are implemented [here](src/permuted_index.cpp)
 
 The solution can be found in [q01](q01.cpp). 
 
@@ -38,4 +41,3 @@ frame(v);
 
 
 #### Q5-11. In text processing it is sometimes useful to know whether a word has any ascenders or descenders. Ascenders are the parts of lowercase letters that extend above the text line; in the English alphabet, the letters b, d, f, h, k, l, and t have ascenders. Similarly, the descenders are the parts of lowercase letters that descend below the line; In English, the letters g, j, p, q, and y have descenders. Write a program to determine whether a word has any ascenders or descenders. Extend that program to find the longest word in the dictionary that has neither ascenders nor descenders.
-
