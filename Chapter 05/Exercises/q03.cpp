@@ -37,8 +37,6 @@ int main()
     container students;
     read_file("data\\10.txt", students);
     
-    //sort(students.begin(), students.end(), compare);
-    
     container failed = extract_fails(students);
     for(container::const_iterator iter = failed.begin(); 
         iter != failed.end(); ++iter)
