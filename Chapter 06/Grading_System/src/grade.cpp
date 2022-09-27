@@ -22,3 +22,15 @@ double grade(const Student_info& s)
 {     
     return grade(s.midterm, s.final, s.homework);
 }
+
+double grade_aux(const Student_info& student)
+{
+    try
+    {
+        return grade(student);
+    }
+    catch(domain_error)
+    {
+        return grade(student.midterm, student.final, 0);
+    };
+}

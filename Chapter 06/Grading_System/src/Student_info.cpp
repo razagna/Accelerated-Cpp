@@ -1,4 +1,5 @@
 #include <iostream>
+#include <algorithm>
 #include <vector>
 #include <string>
 #include "Student_info.hpp"
@@ -32,4 +33,9 @@ istream& read_hw(istream& in, vector<double>& hw)
 bool compare(const Student_info& s1, const Student_info& s2)
 {
     return s1.name < s2.name;
+}
+
+bool did_all_hw(Student_info& student)
+{
+    return find(student.homework.begin(), student.homework.end(), 0) == student.homework.end();
 }

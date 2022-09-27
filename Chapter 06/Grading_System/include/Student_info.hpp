@@ -18,4 +18,6 @@ std::istream& read_hw(std::istream&, std::vector<double>&);
 
 bool compare(const Student_info&, const Student_info&);
 
+bool did_all_hw(Student_info&);
+
 #endif
