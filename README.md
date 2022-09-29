@@ -19,11 +19,13 @@ The content of this repository is based on the book [**Accelerated C++: Practica
 |-----------|-----|-----|-----|-----|-----|-----|-----|
 | answer    | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
 | code      | [Examples](/Chapter%2004/Examples) | N/A | N/A | N/A | N/A | N/A | N/A |
+
 ### Chapter 04
 | Exercises | 4-0 | 4-1 | 4-2 | 4-3 | 4-4 | 4-5 | 4-6 | 4-7 | 4-8 |
 |-----------|-----|-----|-----|-----|-----|-----|-----|-----|-----|
 | answer    | N/A | [link](/Chapter%2004/Exercises#q4-1-we-noted-in-42365-that-it-is-essential-that-the-argument-types-in-a-call-to-max-match-exactly-will-the-following-code-work-if-there-is-a-problem-how-would-you-fix-it) | N/A |[link](/Chapter%2004/Exercises#q4-3-what-happens-if-we-rewrite-the-previous-program-to-allow-values-up-to-but-not-including-1000-but-neglect-to-change-the-arguments-to-setw-rewrite-the-program-to-be-more-robust-in-the-face-of-changes-that-allow-i-to-grow-without-adjusting-the-setw-arguments) | N/A | [link](/Chapter%2004/Exercises#q4-5-write-a-function-that-reads-words-from-an-input-stream-and-stores-them-in-a-vector-use-that-function-both-to-write-programs-that-count-the-number-of-words-in-the-input-and-to-count-how-many-times-each-word-occurred) | N/A | N/A | [link](/Chapter%2004/Exercises#q4-8-if-the-following-code-is-legal-what-can-we-infer-about-the-return-type-of-f) |
-| code      | [Examples](/Chapter%2004/Examples) | N/A | [q02](/Chapter%2004/Exercises/q02.cpp) | [q03](/Chapter%2004/Exercises/q03.cpp) | [q04](/Chapter%2004/Exercises/q04.cpp) | [q05](/Chapter%2004/Exercises/q05.cpp) | [q06](/Chapter%2004/Exercises/q06.cpp) | [q07](/Chapter%2004/Exercises/q07.cpp) | [q08](/Chapter%2004/Exercises/q08.cpp) |
+| code      | [Examples](/Chapter%2004/Examples) | N/A | [q02](/Chapter%2004/Exercises/q02.cpp) | [q03](/Chapter%2004/Exercises/q03.cpp) | [q04](/Chapter%2004/Exercises/q04.cpp) | [q05](/Chapter%2004/Exercises/q05.cpp) | [q06](/Chapter%2004/Exercises/q06.cpp) | [q07](/Chapter%2004/Exercises/q07.cpp) | N/A |
+
 ### Chapter 05
 | Exercises | 5-0 | 5-1 | 5-2 | 5-3 | 5-4 | 5-5 | 5-6 | 5-7 | 5-8 | 5-9 | 5-10 | 5-11 |
 |-----------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|------|------|
