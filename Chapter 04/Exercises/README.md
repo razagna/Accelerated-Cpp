@@ -1,3 +1,6 @@
+#### Q4-0. Compile, execute, and test the programs in this chapter.
+The test programs for this chapter can be viewed in the [Examples](../Examples) folder.
+
 #### Q4-1: We noted in §4.2.3/65 that it is essential that the argument types in a call to `max` match exactly. Will the following code work? If there is a problem, how would you fix it?
 ```c++
 int maxlen;
