@@ -71,6 +71,7 @@ int main()
 
     //count and print repetitions in two different ways
     iter_count(words);
+    cout << "------------" << endl;
     sort_count(words);
 
     return 0;
