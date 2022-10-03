@@ -17,6 +17,8 @@ First, `u` is initialized with ten `int`s of value "100". Then `v` is declared e
 
 However, algorithms do not act on containers, but on their elements. Therefore, we need a way to ensure that `v` has space for new elements as they get copied to it.
 
+The program can be found in [q03](q03.cpp).
+
 #### Q6-4. Correct the program you wrote in the previous exercise to copy from u into v. There are at least two possible ways to correct the program. Implement both, and describe the relative advantages and disadvantages of each approach.
 T0 ensure that `v` has enough space for the new elements, we could:
 * use the `reserce` operation to pre-allocate space for elements before they get added
@@ -42,7 +44,6 @@ A new function was created called `extract_incomplete_hw` that accepts a `vector
 The function written in the previous exercise was abstracted to a new function called `extract` that accepts a `vector` containing the students we would like to classify and a classification function with a return type `bool` to base the extraction on. The function is written such that it returns a `vector` containing the students who met the criteria passed as a function in the second parameter. The solution can be found in [q08](q08.cpp).
 
 #### Q6-9. Use a library algorithm to concatenate all the elements of a `vector<string>`.
-Two approaches were used:
+The solution can be found in [q09](q09.cpp). The two following approaches were used:
 * the `accumulate` function to accumulate all elements in the `vector` starting with an empty string. The resulting string doesn't contain spaces between each word.
 * a function that uses the `copy` algorithm by looping through each character in each word and concatenating them into a new string. This function takes care to put a space between each word.
-Both of them can be found in [q09](q09.cpp).
