@@ -1,4 +1,4 @@
-The performance in microseconds of the one-pass and two-pass [implementations](/Grading_System/classify_students.cpp) of the `extract_fails` function, like shown in section 6.3 are summarized in the table below.
+The performance in microseconds of the one-pass and two-pass [implementations](Grading_System/classify_students.cpp) of the `extract_fails` function, like shown in section 6.3 are summarized in the table below.
 
 | File size | two-pass | one-pass |
 | ----------|----------|----------|
