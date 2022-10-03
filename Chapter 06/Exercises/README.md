@@ -21,7 +21,7 @@ The program can be found in [q03](q03.cpp).
 
 #### Q6-4. Correct the program you wrote in the previous exercise to copy from u into v. There are at least two possible ways to correct the program. Implement both, and describe the relative advantages and disadvantages of each approach.
 T0 ensure that `v` has enough space for the new elements, we could:
-* use the `reserce` operation to pre-allocate space for elements before they get added
+* use the `reserve` operation to pre-allocate space for elements before they get added
 * use the iterator adapter `back_inserter` to dynamically allocate space for new elements as they get added
 The table below shows a comparison between the advantages and disadvantages of each approach.
 
