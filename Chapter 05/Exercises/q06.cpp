@@ -72,14 +72,14 @@ int main()
     auto original_stop = high_resolution_clock::now();
     
     cout << "The original 'extract_fails' function took " << duration_cast<microseconds>(original_stop - original_start).count()
-    << " micro seconds to extract the fails from " << count << " records." << endl;
+    << " microseconds to extract the fails from " << count << " records." << endl;
 
     auto new_start = high_resolution_clock::now();
     new_extract_fails(students_before);
     auto new_stop = high_resolution_clock::now();
 
     cout << "The new 'extract_fails' function took " << duration_cast<microseconds>(new_stop - new_start).count()
-    << " micro seconds to extract the fails from " << count << " records." << endl;
+    << " microseconds to extract the fails from " << count << " records." << endl;
 
     return 0;
 }

@@ -44,7 +44,7 @@ int main()
     auto stop = high_resolution_clock::now();
     
     cout << "Using lists, it took around " << duration_cast<microseconds>(stop - start).count()
-    << " micro seconds to extract the fails from " << count << " records." << endl;
+    << " microseconds to extract the fails from " << count << " records." << endl;
 
     return 0;
 }
