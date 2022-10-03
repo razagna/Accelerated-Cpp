@@ -25,7 +25,7 @@ T0 ensure that `v` has enough space for the new elements, we could:
 * use the iterator adapter `back_inserter` to dynamically allocate space for new elements as they get added
 The table below shows a comparison between the advantages and disadvantages of each approach.
 
-|               | [reserve](q04-1.cpp) | [`back_inserter`](q04-2.cpp) |
+|               | [`reserve`](q04-1.cpp) | [`back_inserter`](q04-2.cpp) |
 |---------------|----------------------|-----------------------------|
 | Advantages    | \* avoids the overhead of repeated memory allocations <br/> \* the `end()` iterator can be safely used as a destination | grows the container dynamically, so we don't need to know the number of new elements beforehand |
 | Disadvantages | requires knowing beforehand the number of elements to be added | repeated memory allocation creates overhead|
