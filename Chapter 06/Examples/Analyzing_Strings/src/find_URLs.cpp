@@ -42,7 +42,7 @@ string::const_iterator url_end(string::const_iterator b, string::const_iterator 
     return find_if(b, e, not_url_ch);
 }
 
-vector<string> find_url(string& s)
+vector<string> find_url(const string& s)
 {
     vector<string> ret;
     typedef string::const_iterator iter;
