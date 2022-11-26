@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.24)
-project(Chapter_xx)
+project(Chapter_07)
 
 include_directories(include)
 
