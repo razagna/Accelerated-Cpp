@@ -2,6 +2,7 @@
 The test programs for this chapter can be viewed in the [Examples](../Examples) folder.
 
 #### Q7-1. Extend the program from §7.2/124 to produce its output sorted by occurrence count. That is, the output should group all the words that occur once, followed by those that occur twice, and so on.
+After creating a `map` from `string` (a word) to `int` (its occurrence count), a second `map` from `int` (occurrence count) to `vector<string>` (words) is created by iterating through the first `map` and grouping words with the same occurrence count. The solution can be found in [q01](q01.cpp).
 
 #### Q7-2. Extend the program in §4.2.3/64 to assign letter grades by ranges. The output should list how many students fall into each category.
 ```
@@ -11,9 +12,10 @@ C 70-79.99...
 D 60-69.99...
 F < 60
 ```
+First, a `map` from `char` (letter grade) to `range` (a `struct` representing the upper and lower bounds of a letter grade) that serves as a reference is created, we create a second `map` from `char` (letter grade) to `vector<Student_info` by looping through the first `map` and the input student `vector` to see which students fall into which category and add them to the `map`. The solution can be found in [q02](q02.cpp).
 
 #### Q7-3. The cross-reference program from §7.3/126 could be improved: As it stands, if a word occurs more than once on the same input line, the program will report that line multiple times. Change the code so that it detects multiple occurrences of the same line number and inserts the line number only once.
-This could be achieved by simply checking whether a line number exits for a word using the `find` algorithm from the `<algorithm>` library and adding it to the list only if it doesn't already exist. The solution can be found in  [q03](q03.cpp).
+This could be achieved by simply checking whether a line number exits for a word using the `find` algorithm from the `<algorithm>` library and adding it to the list only if it doesn't already exist. The solution can be found in [q03](q03.cpp).
 
 #### Q7-4. The output produced by the cross-reference program will be ungainly if the input file is large. Rewrite the program to break up the output if the lines get too long.
 
