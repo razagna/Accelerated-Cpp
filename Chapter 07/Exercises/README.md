@@ -18,6 +18,7 @@ First, a `map` from `char` (letter grade) to `range` (a `struct` representing th
 This could be achieved by simply checking whether a line number exits for a word using the `find` algorithm from the `<algorithm>` library and adding it to the list only if it doesn't already exist. The solution can be found in [q03](q03.cpp).
 
 #### Q7-4. The output produced by the cross-reference program will be ungainly if the input file is large. Rewrite the program to break up the output if the lines get too long.
+When outputting the result, after printing each value, the program checks whether it has reached a point where it should start from a new line by checking if the number of values it has printed so far is a multiple of our desired maximum length. Then, it either starts a new line before continuing or prints a comma and continues. The solution can be found in [q04](q04.cpp).
 
 #### Q7-5. Reimplement the grammar program using a `list` as the data structure in which we build the sentence.
 
