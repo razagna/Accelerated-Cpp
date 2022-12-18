@@ -76,7 +76,7 @@ void gen_aux(const Grammar& g, const string& word, list<string>& ret)
         const Rule_collection& c = it->second;
 
         Rule_collection::const_iterator iter = c.begin();
-        advance(iter, nrand(c.size()));;
+        advance(iter, nrand(c.size()));
         const Rule& r = *iter;
 
         for(Rule::const_iterator i = r.begin(); i != r.end(); ++i)
