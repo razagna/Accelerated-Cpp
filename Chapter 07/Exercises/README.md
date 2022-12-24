@@ -29,7 +29,7 @@ Once it enters the main loop, it: [^1]
 1. finds and picks a rule corresponding to the **first most** element in the `rules` stack from the `Grammar` map
 2. `erase` the rule it searched in the `Grammer` map from the `rules` stack
 3. save the iterator it gets from the erasure done in step 2, which points to the beginning of the `rules` stack
-4. iterate through the rule:
+4. iterate through the rule it picked in step 1:
 	- add plain words into the output sentence
 	- bracketed words:
 		- add parent rules in chronological order
