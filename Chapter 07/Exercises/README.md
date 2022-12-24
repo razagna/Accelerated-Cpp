@@ -39,6 +39,7 @@ Once it enters the main loop, it:
 The full solution can be found in [q06](q06.cpp).
 
 #### Q7-7. Change the driver for the cross-reference program so that it writes `line` if there is only one line and `lines` otherwise.
+This was achieved by simply putting a ternary operator in place of the `"(s)"` string that checks whether the number of lines, which in this case corresponds to the size of the `second` element in the map's `pair`, exceeds one and either prints an `s` in that location or omits it accordingly. The full solution can be found in [q07](q07.cpp).
 
 #### Q7-8. Change the cross-reference program to find all the URLs in a file, and write all the lines on which each distinct URL occurs.
 
