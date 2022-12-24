@@ -42,6 +42,7 @@ The full solution can be found in [q06](q06.cpp).
 This was achieved by simply putting a ternary operator in place of the `"(s)"` string that checks whether the number of lines, which in this case corresponds to the size of the `second` element in the map's `pair`, exceeds one and either prints an `s` in that location or omits it accordingly. The full solution can be found in [q07](q07.cpp).
 
 #### Q7-8. Change the cross-reference program to find all the URLs in a file, and write all the lines on which each distinct URL occurs.
+This was simply achieved by giving the `xref` function the `find_url` program we created in [example 6.1.3](../../Chapter%2006/Examples/Analyzing_Strings/src/find_URLs.cpp) instead of using the default `split` function by leaving the second input argument out. The full solution can be found in [q08](q08.cpp).
 
 #### Q7-9. (difficult) The implementation of `nrand` in §7.4.4/135 will not work for arguments greater than `RAND_MAX`. Usually, this restriction is no problem, because `RAND_MAX` is often the largest possible `integer` anyway. Nevertheless, there are implementations under which `RAND_MAX` is much smaller than the largest possible `integer`. For example, it is not uncommon for `RAND_MAX` to be 32767 (215 -1) and the largest possible` integer` to be 2147483647 (231 -1). Reimplement `nrand` so that it works well for all values of `n`.
 
