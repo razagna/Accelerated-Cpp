@@ -21,7 +21,7 @@ This could be achieved by simply checking whether a line number exits for a word
 When outputting the result, after printing each value, the program checks whether it has reached a point where it should start from a new line by checking if the number of values it has printed so far is a multiple of our desired maximum length. Then, it either starts a new line before continuing or prints a comma and continues. The solution can be found in [q04](q04.cpp).
 
 #### Q7-5. Reimplement the grammar program using a `list` as the data structure in which we build the sentence.
-First, the `split` function was updated to work with `list` type. Second, we need to access specific elements in two parts of the program, but since `list` doesn't support random access, the `advance` function from the standard library was used to advance the iterator to the desired position to get the needed element. Otherwise, the program is identical to the `vector` implementation in the [example](../Examples/Generating_Sentences/main.cpp) problem. The solution can be found in [q05](q05.cpp)
+First, the `split` function was updated to work with `list` type. Second, we need to access specific elements in two parts of the program, but since `list` doesn't support random access, the `advance` function from the standard library was used to advance the iterator to the desired position to get the needed element. Otherwise, the program is identical to the `vector` implementation in the [example](../Examples/Generating_Sentences/main.cpp) problem. The solution can be found in [q05](q05.cpp).
 
 #### Q7-6. Reimplement the `gen_sentence` program using two `vector`s: One will hold the fully unwound, generated sentence, and the other will hold the rules and will be used as a stack. Do not use any recursive calls.
 The program uses two `vector`s, one to hold the output sentence and one to hold rule categories that need to get resolved into words that will be added to the output sentence. The program starts by putting the first rule category, which is `<sentence>`, in the `rules` stack. 
@@ -35,7 +35,7 @@ Once it enters the main loop, it:
 		- add parent rules in chronological order
 		- substitute parent rules with child rules through insertion by:
 			- deleting the parent rule in step 2
-			- `insert` the child in its place using the iterator created in step 3
+			- `insert` the child in its place using the iterator created in step 3.
 The full solution can be found in [q06](q06.cpp).
 
 #### Q7-7. Change the driver for the cross-reference program so that it writes `line` if there is only one line and `lines` otherwise.
