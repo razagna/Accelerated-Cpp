@@ -27,8 +27,8 @@ First, the `split` function was updated to work with `list` type. Second, we nee
 The program uses two `vector`s, one to hold the output sentence and one to hold rule categories that need to get resolved into words that will be added to the output sentence. The program starts by putting the first rule category, which is `<sentence>`, in the `rules` stack. 
 Once it enters the main loop, it:
 1. finds and picks a rule corresponding to the **first most** element in the `rules` stack from the `Grammar` map
-2. delete the rule it searched in the `Grammer` map from the `rules` stack
-3. create a new iterator starting at the beginning of the rule it picked
+2. `erase` the rule it searched in the `Grammer` map from the `rules` stack
+3. save the iterator it gets from the erasure done in step 2, which points to the beginning of the `rules` stack
 4. iterate through the rule:
 	- add plain words into the output sentence
 	- bracketed words: [^1]
