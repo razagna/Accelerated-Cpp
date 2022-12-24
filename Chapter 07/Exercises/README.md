@@ -36,6 +36,7 @@ Once it enters the main loop, it:
 		- substitute parent rules with child rules through insertion by:
 			- deleting the parent rule in step 2
 			- `insert` the child in its place using the iterator created in step 3.
+
 The full solution can be found in [q06](q06.cpp).
 
 #### Q7-7. Change the driver for the cross-reference program so that it writes `line` if there is only one line and `lines` otherwise.
