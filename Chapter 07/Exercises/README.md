@@ -1,4 +1,4 @@
-#### Q6-0. Compile, execute, and test the programs in this chapter.
+#### Q7-0. Compile, execute, and test the programs in this chapter.
 The test programs for this chapter can be viewed in the [Examples](../Examples) folder.
 
 #### Q7-1. Extend the program from §7.2/124 to produce its output sorted by occurrence count. That is, the output should group all the words that occur once, followed by those that occur twice, and so on.
