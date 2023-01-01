@@ -10,7 +10,8 @@ Yes, both definitions are valid. The `+` is left-associative. So, although we ca
 1. add `hello + ", world"` and return a `string`
 2. add the `string` resulting from the operation in step 1 to `"!"`
 3. store the result in `message`
-An example program can be found in [q01](q01.cpp).
+
+The program can be found in [q01](q01.cpp).
 
 #### Q1-2. Are the following definitions valid? Why or why not?
 ```c++
@@ -37,7 +38,7 @@ int main()
 	return 0;
 }
 ```
-Yes, it is a valid program. It starts by initializing a string called `s` and adding it to the output stream. It discards the `s` variable once it exits the first scope. It then initializes a new string called `s` when it enters the second scope and adds it to the output stream. An example program can be found in [q03](q03.cpp).
+Yes, it is a valid program. It starts by initializing a string called `s` and adding it to the output stream. It discards the `s` variable once it exits the first block. It then initializes a new string called `s` when it enters the second block and adds it to the output stream. The program can be found in [q03](q03.cpp).
 
 #### Q1-4. What about this one? What if we change }} to };} in the third line from the end?
 ```c++
@@ -57,7 +58,7 @@ int main()
 	return 0;
 }
 ```
-This is a valid program. It behaves like the program in [Q1-3](q03.cpp). Adding a semicolon before the curly braces before the last has no bearing on the result. An example program can be found in [q04](q04.cpp)
+This is a valid program. It behaves like the program in [Q1-3](q03.cpp). Adding a semicolon after the innermost block has no bearing on the result in this case. The program can be found in [q04](q04.cpp).
 
 #### Q1-5. Is this program valid? If so, what does it do? If not, say why not, and rewrite it to be valid.
 ```c++
@@ -76,7 +77,7 @@ int main()
 	return 0;
 }
 ```
-This program is not valid because in the last `cout` statement, the program tries to access the variable `x`, which is destructed by the time we leave its scope and start executing that statement. To fix this, the innermost set of curly braces must include the last `cout` statement in them. The corrected program can be found in [q05](q05.cpp).
+This program is not valid because in the last `cout` statement, the program tries to access the variable `x`, which is defined in a different block such that by the time we reach this expression it's already destructed. To fix this, the innermost block must include the last `cout` statement in it. The corrected program can be found in [q05](q05.cpp).
 
 #### Q1-6. What does the following program do if, when it asks you for input, you type two names (for example, Samuel Beckett)? Predict the behavior before running the program, then try it.
 ```c++
