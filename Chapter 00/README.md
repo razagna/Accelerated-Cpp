@@ -5,7 +5,7 @@ The source code for the "Hello, world!" program can be found in [hello-world](he
 ```c++
 3 + 4;
 ```
-It adds 3 integers to 4 integers as a side effect.
+This expression adds 3 integers to 4 integers and yields 7 as a result but doesn't have any side effects.
 
 #### Q0-2. Write a program that, when run, writes
 `This (") is a quote, and this (\) is a backslash.`
@@ -62,8 +62,8 @@ This program is valid because everything after a double forward slash is conside
 The shortest valid program is one that consists of the declaration of a `main` function followed by empty curly braces. It can be viewed in [q09](q09.cpp).
 
 #### Q0-10. Rewrite the Hello, world! program so that a newline occurs everywhere that whitespace is allowed in the program.
-For the most part, this has no effect on the program since semicolons and curly braces are used to indicate scope in C++. This only becomes an issue when used to separate;
+For the most part, this has no effect on the program since C++ programs are free form. This only becomes an issue when used to separate:
 - an `#include` from the name of the file or library it's including
 - portions of a single string literal
-- double operators like `::` or `<<`
+- comments using `//`
 The example program can be found in [q10](q10.cpp).
