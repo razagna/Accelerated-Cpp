@@ -26,16 +26,16 @@ The first definition is valid. However, the second one is invalid because the `+
 #include <string>
 int main()
 {
-	{
-		const std::string s = "a string";
-		std::cout << s << std::endl;
-	}
+    {
+        const std::string s = "a string";
+        std::cout << s << std::endl;
+    }
 	
-	{
-		const std::string s = "another string";
-		std::cout << s << std::endl;
-	}
-	return 0;
+    {
+        const std::string s = "another string";
+        std::cout << s << std::endl;
+    }
+    return 0;
 }
 ```
 Yes, it is a valid program. It starts by initializing a string called `s` and adding it to the output stream. It discards the `s` variable once it exits the first block. It then initializes a new string called `s` when it enters the second block and adds it to the output stream. The program can be found in [q03](q03.cpp).
@@ -46,16 +46,15 @@ Yes, it is a valid program. It starts by initializing a string called `s` and ad
 #include <string>
 int main()
 {
-	{
-		const std::string s = "a string";
-		std::cout << s << std::endl;
-		{ 
-			const std::string s = "another string";
-			std::cout << s << std::endl; 
-		};
-	}
-	
-	return 0;
+    {
+        const std::string s = "a string";
+        std::cout << s << std::endl;
+        { 
+            const std::string s = "another string";
+            std::cout << s << std::endl; 
+        }
+    }
+    return 0;
 }
 ```
 This is a valid program. It behaves like the program in [Q1-3](q03.cpp). Adding a semicolon after the innermost block has no bearing on the result in this case. The program can be found in [q04](q04.cpp).
@@ -66,15 +65,15 @@ This is a valid program. It behaves like the program in [Q1-3](q03.cpp). Adding 
 #include <string>
 int main()
 {
-	{
-		std::string s = "a string";
-		{
-			std::string x = s + ", really";
-			std::cout << s << std::endl; 
-		}
-		std::cout << x << std::endl;
-	}
-	return 0;
+    {
+        std::string s = "a string";
+        {
+            std::string x = s + ", really";
+            std::cout << s << std::endl; 
+        }
+        std::cout << x << std::endl;
+    }
+    return 0;
 }
 ```
 This program is not valid because in the last `cout` statement, the program tries to access the variable `x`, which is defined in a different block such that by the time we reach this expression it's already destructed. To fix this, the innermost block must include the last `cout` statement in it. The corrected program can be found in [q05](q05.cpp).
@@ -85,15 +84,15 @@ This program is not valid because in the last `cout` statement, the program trie
 #include <string>
 int main()
 {
-	std::cout << "What is your name? ";
-	std::string name;
-	std::cin >> name;
-	std::cout << "Hello, " << name
-	<< std::endl << "And what is yours? ";
-	std::cin >> name;
-	std::cout << "Hello, " << name
-	<< "; nice to meet you too!" << std::endl;
-	return 0;
+    std::cout << "What is your name? ";
+    std::string name;
+    std::cin >> name;
+    std::cout << "Hello, " << name
+    << std::endl << "And what is yours? ";
+    std::cin >> name;
+    std::cout << "Hello, " << name
+    << "; nice to meet you too!" << std::endl;
+    return 0;
 }
 ```
 The program will interpret the first name `Samuel` to be the first input name and outputs it in line 8, and the last name `Beckett` to be the second input name and uses it in the output on line 11. This happens because `cin` reads the input until it encounters the first whitespace after which it stops and stores the result before continuing reading for additional input. This can be tested using the program in [q06](q06.cpp).
