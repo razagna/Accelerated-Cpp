@@ -14,6 +14,22 @@ The content of this repository is based on the book [**Accelerated C++: Practica
 	* **Visual Studio Code** 1.70.2
 
 # 3. Table of Contents
+### Chapter 00
+| Exercises | 0-0 | 0-1 | 0-2 | 0-3 | 0-4 | 0-5 | 0-6 | 0-7 | 0-8 | 0-9 | 0-10 |
+|-----------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|------|
+| answer    | [link](/Chapter%2000#q0-0-compile-and-run-the-hello-world-program) | [link](/Chapter%2000#q0-1-what-does-the-following-statement-do) | [link](/Chapter%2000#q0-2-write-a-program-that-when-run-writes) | [link](/Chapter%2000#q0-3-the-string-literal-t-represents-a-tab-character-different-c-implementations-display-tabs-in-different-ways-experiment-with-your-implementation-to-learn-how-it-treats-tabs) | [link](/Chapter%2000#q0-4-write-a-program-that-when-run-writes-the-hello-world-program-as-its-output) | [link](/Chapter%2000#q0-5-is-this-a-valid-program-why-or-why-not) | [link](/Chapter%2000#q0-6-is-this-a-valid-program-why-or-why-not) | [link](/Chapter%2000#q0-7-what-about-this-one) | [link](/Chapter%2000#q0-8-and-this-one) | [link](/Chapter%2000#q0-9-what-is-the-shortest-valid-program) | [link](/Chapter%2000#q0-10-rewrite-the-hello-world-program-so-that-a-newline-occurs-everywhere-that-whitespace-is-allowed-in-the-program) |
+| code      | [hello-world](/Chapter%2000/hello-world.cpp) | N/A | [link](/Chapter%2000/q02.cpp) | [link](/Chapter%2000/q03.cpp) | [link](/Chapter%2000/q04.cpp) | N/A | N/A | N/A | N/A | [link](/Chapter%2000/q09.cpp) | [link](/Chapter%2000/q10.cpp) |
+
+### Chapter 01
+| Exercises | 1-0 | 1-1 | 1-2 | 1-3 | 1-4 | 1-5 | 1-6 |
+|-----------|-----|-----|-----|-----|-----|-----|-----|
+| answer    | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+
+### Chapter 02
+| Exercises | 2-0 | 2-1 | 2-2 | 2-3 | 2-4 | 2-5 | 2-6 |
+|-----------|-----|-----|-----|-----|-----|-----|-----|
+| answer    | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+
 ### Chapter 03
 | Exercises | 3-0 | 3-1 | 3-2 | 3-3 | 3-4 | 3-5 | 3-6 |
 |-----------|-----|-----|-----|-----|-----|-----|-----|
