@@ -1,8 +1,6 @@
 cmake_minimum_required(VERSION 3.16.3)
 project(Chapter_02)
 
-include_directories(include)
-
 file(GLOB EXAMPLES *.cpp)
 
 foreach(example ${EXAMPLES})
