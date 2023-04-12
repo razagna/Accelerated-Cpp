@@ -15,3 +15,13 @@ This can be achieved by constructing two `string`s, one for the padding done to 
 
 #### Q2-5. Write a set of "*" characters so that they form a square, a rectangle, and a triangle.
 This was achieved by writing three `for` loops that go through the desired number of rows and prints stars and spaces in accordance with the shape. The solution can be found in [q05](q05.cpp).
+
+#### Q2-6. What does the following code do?
+```c++
+int i = 0;
+while (i < 10) {
+	i += 1;
+	std::cout << i << std::endl;
+}
+```
+It instantiates a new integer variable called `i` with the value 0 and keeps adding one to it and then printing the value of `i` until `i` reaches the value 10, after which it stops.
