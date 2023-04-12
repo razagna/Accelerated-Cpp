@@ -28,3 +28,6 @@ It instantiates a new integer variable called `i` with the value 0 and keeps add
 
 #### Q2-7. Write a program to count down from 10 to -5.
 The program consists of a simple `for` loop that starts with an integer with the value of 10 and decrements the integer and outputs the result while the integer's value is less than -6. The program can be viewed in [q07](q07.cpp).
+
+#### Q2-8. Write a program to generate the product of the numbers in the range `[1, 10)`.
+The program initiates with 1 an integer variable called `result` to store the multiplication result in, then enters a for loop where values from 1 until 9 are multiplied to the `result` variable and the result is store back in the variable itself. The program can be checked in [q08](q08.cpp)
