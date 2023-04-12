@@ -25,3 +25,6 @@ while (i < 10) {
 }
 ```
 It instantiates a new integer variable called `i` with the value 0 and keeps adding one to it and then printing the value of `i` until `i` reaches the value 10, after which it stops.
+
+#### Q2-7. Write a program to count down from 10 to -5.
+The program consists of a simple `for` loop that starts with an integer with the value of 10 and decrements the integer and outputs the result while the integer's value is less than -6. The program can be viewed in [q07](q07.cpp).
