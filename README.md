@@ -23,13 +23,14 @@ The content of this repository is based on the book [**Accelerated C++: Practica
 ### Chapter 01
 | Exercises | 1-0 | 1-1 | 1-2 | 1-3 | 1-4 | 1-5 | 1-6 |
 |-----------|-----|-----|-----|-----|-----|-----|-----|
-| answer    | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+| answer    | [link](/Chapter%2001/Exercises#q1-0-compile-execute-and-test-the-programs-in-this-chapter) | [link](/Chapter%2001/Exercises#q1-1-are-the-following-definitions-valid-why-or-why-not) | [link](/Chapter%2001/Exercises#q1-2-are-the-following-definitions-valid-why-or-why-not) | [link](/Chapter%2001/Exercises#q1-3-is-the-following-program-valid-if-so-what-does-it-do-if-not-why-not) | [link](/Chapter%2001/Exercises#q1-4-what-about-this-one-what-if-we-change--to--in-the-third-line-from-the-end) | [link](/Chapter%2001/Exercises#q1-5-is-this-program-valid-if-so-what-does-it-do-if-not-say-why-not-and-rewrite-it-to-be-valid) | [link](/Chapter%2001/Exercises#q1-6-what-does-the-following-program-do-if-when-it-asks-you-for-input-you-type-two-names-for-example-samuel-beckett-predict-the-behavior-before-running-the-program-then-try-it) |
+| code      | [Examples](/Chapter%2001/Examples) | [q01](/Chapter%2001/Exercises/q01.cpp) | N/A | [q03](/Chapter%2001/Exercises/q03.cpp) | [q04](/Chapter%2001/Exercises/q04.cpp) | [q05](/Chapter%2001/Exercises/q05.cpp) | [q06](/Chapter%2001/Exercises/q06.cpp) |
 
 ### Chapter 02
-| Exercises | 2-0 | 2-1 | 2-2 | 2-3 | 2-4 | 2-5 | 2-6 |
-|-----------|-----|-----|-----|-----|-----|-----|-----|
-| answer    | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
-
+| Exercises | 2-0 | 2-1 | 2-2 | 2-3 | 2-4 | 2-5 | 2-6 | 2-7 | 2-8 | 2-9 | 2-10 |
+|-----------|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|------|
+| answer    | [link](/Chapter%2002/Exercises#q2-0-compile-and-run-the-program-presented-in-this-chapter) | [link](/Chapter%2002/Exercises#q2-1-change-the-framing-program-so-that-it-writes-its-greeting-with-no-separation-from-the-frame) | [link](/Chapter%2002/Exercises#q2-2-change-the-framing-program-so-that-it-uses-a-different-amount-of-space-to-separate-the-sides-from-the-greeting-than-it-uses-to-separate-the-top-and-bottom-borders-from-the-greeting) | [link](/Chapter%2002/Exercises#q2-3-rewrite-the-framing-program-to-ask-the-user-to-supply-the-amount-of-spacing-to-leave-between-the-frame-and-the-greeting) | [link](/Chapter%2002/Exercises#q2-4-the-framing-program-writes-the-mostly-blank-lines-that-separate-the-borders-from-the-greeting-one-character-at-a-time-change-the-program-so-that-it-writes-all-the-spaces-needed-in-a-single-output-expression) | [link](/Chapter%2002/Exercises#q2-5-write-a-set-of--characters-so-that-they-form-a-square-a-rectangle-and-a-triangle) | [link](/Chapter%2002/Exercises#q2-6-what-does-the-following-code-do) | [link](/Chapter%2002/Exercises#q2-7-write-a-program-to-count-down-from-10-to--5) | [link](/Chapter%2002/Exercises#q2-8-write-a-program-to-generate-the-product-of-the-numbers-in-the-range-1-10) | [link](/Chapter%2002/Exercises#q2-9-write-a-program-that-asks-the-user-to-enter-two-numbers-and-tells-the-user-which-number-is-larger-than-the-other) | [link](/Chapter%2002/Exercises#q2-10-explain-each-of-the-uses-of-std-in-the-following-program) |
+| code | [framing](/Chapter%2002/Examples/framing.cpp) | [q01](/Chapter%2002/Exercises/q01.cpp) | [q02](/Chapter%2002/Exercises/q02.cpp) | [q03](/Chapter%2002/Exercises/q03.cpp) | [q04](/Chapter%2002/Exercises/q04.cpp) | [q05](/Chapter%2002/Exercises/q05.cpp) | N/A | [q07](/Chapter%2002/Exercises/q07.cpp) | [q08](/Chapter%2002/Exercises/q08.cpp) | [q09](/Chapter%2002/Exercises/q09.cpp) | N/A |
 ### Chapter 03
 | Exercises | 3-0 | 3-1 | 3-2 | 3-3 | 3-4 | 3-5 | 3-6 |
 |-----------|-----|-----|-----|-----|-----|-----|-----|
