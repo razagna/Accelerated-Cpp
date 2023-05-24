@@ -30,4 +30,22 @@ It instantiates a new integer variable called `i` with the value 0 and keeps add
 The program consists of a simple `for` loop that starts with an integer with the value of 10 and decrements the integer and outputs the result while the integer's value is less than -6. The program can be viewed in [q07](q07.cpp).
 
 #### Q2-8. Write a program to generate the product of the numbers in the range `[1, 10)`.
-The program initiates with 1 an integer variable called `result` to store the multiplication result in, then enters a for loop where values from 1 until 9 are multiplied to the `result` variable and the result is store back in the variable itself. The program can be checked in [q08](q08.cpp)
+The program initiates with 1 an integer variable called `result` to store the multiplication result in, then enters a for loop where values from 1 until 9 are multiplied to the `result` variable and the result is store back in the variable itself. The program can be checked in [q08](q08.cpp).
+
+#### Q2-9. Write a program that asks the user to enter two numbers and tells the user which number is larger than the other.
+The program prompts the user for the two numbers and uses `std::cin` to read the input values into two `int` variables. It then uses a conditional `if` statement to compare the two integers and depending on which is larger outputs a custom message. The program can be viewed in [q09](q09.cpp).
+
+#### Q2-10. Explain each of the uses of std:: in the following program:
+```c++
+int main() {
+int k = 0;
+   while (k != n) { // invariant: we have written k asterisks so far
+      using std::cout;
+      cout << "*";
+      ++k;
+   }
+   std::cout << std::endl; // std:: is required here
+   return 0;
+}
+```
+The `using std::cout` statement communicates that we will be using `cout` to refer to `std::cout` onward. However, this using-declaration is constrained within the `while` loop. So once we exit the loop, it goes out of scope, hence why `std::` was used to qualify `cout` and `endl` in the subsequent line.
