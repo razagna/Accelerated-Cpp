@@ -1,17 +1,17 @@
 #  1. Overview
-The content of this repository is based on the book [**Accelerated C++: Practical Programming by Example**](https://www.amazon.com/Accelerated-C-Practical-Programming-Example/dp/020170353X) by _Andrew Koenig and Barbara E. Moo_. It mainly consists of:
+This repository is based on the book [**Accelerated C++: Practical Programming by Example**](https://www.amazon.com/Accelerated-C-Practical-Programming-Example/dp/020170353X) by _Andrew Koenig and Barbara E. Moo_. It mainly consists of:
 * the source code for example problems discussed in each chapter
 * solutions to the exercise problems posed at the end of each chapter
 
 ![](book-cover.jpg)
 
 # 2. Notes
-* This is not intended to be an authoritative source. To my knowledge, there is no official solution guide to check against, so these are just my solutions and are therefore prone to errors and inaccuracies. Use at your own discretion.
+* This is not intended to be taken as an authoritative source. To my knowledge, there is no official solution guide to check against, so keep in mind the solutions included here being my own and therefore potentially erroneous and sub-optimal.
 
 * The tools used in this project:
 	* **g++** 11.2.0
 	* **CMake** 3.24.2
-	* **Visual Studio Code** 1.70.2
+	* **My Brain** 2022~2023
 
 # 3. Table of Contents
 ### Chapter 00
