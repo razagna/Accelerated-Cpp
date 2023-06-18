@@ -11,6 +11,7 @@ The number of entries is divided by 4 to give the size of each quartile. The num
 The program prompts the user for an input sentence and then adds each new word to a `vector`. It then loops through each word in the `vector` twice; The outer loop picks out the word to investigate and the inner loop checks how many times the word appears in the `vector` and increases the word count each time it encounters an instance. The solution can be found in [q03](q03.cpp). [^3]
 
 #### Q3-4. Write a program to report the length of the longest and shortest `string` in its input.
+For every word in the input, if its the first word entered then its length will act as the starting value for calculating the shortest word using the `min` function from the `<algorithm>` library. Likewise, the length of the previous longest word, which starts as zero, is compared to the length of the newest word using the `max` function until we finish reading input words. The solution can be found in [q04](q04.cpp). 
 
 #### Q3-5. Write a program that will keep track of grades for several students at once. The program could keep two `vector`s in sync: The first should hold the student's names, and the second the final grades that can be computed as input is read. For now, you should assume a fixed number of homework grades.
 
@@ -18,4 +19,4 @@ The program prompts the user for an input sentence and then adds each new word t
 
 [^1]: the hint isn't clear enough for me
 [^2]: the remainder value isn't taken into account so the result isn't accurate
-[^3]: The program repeats this for every word in the input even if it had been previously counted
+[^3]: The program repeats this for every word in the input even if it had been previously counted. For a version that uses the `<algorithm>` library, check [q03-v2](q03-v2.cpp).
