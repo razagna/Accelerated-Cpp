@@ -8,6 +8,7 @@ If we are going to read the following value [1, 2, 3, 4, 6, 7, 8] and while read
 The number of entries is divided by 4 to give the size of each quartile. The numbers in the inputs are then looped through to decide which values belong to which quartile. The solution can be found in [q02](q02.cpp). [^2]
 
 #### Q3-3. Write a program to count how many times each distinct word appears in its input.
+The program prompts the user for an input sentence and then adds each new word to a `vector`. It then loops through each word in the `vector` twice; The outer loop picks out the word to investigate and the inner loop checks how many times the word appears in the `vector` and increases the word count each time it encounters an instance. The solution can be found in [q03](q03.cpp). [^3]
 
 #### Q3-4. Write a program to report the length of the longest and shortest `string` in its input.
 
@@ -17,3 +18,4 @@ The number of entries is divided by 4 to give the size of each quartile. The num
 
 [^1]: the hint isn't clear enough for me
 [^2]: the remainder value isn't taken into account so the result isn't accurate
+[^3]: The program repeats this for every word in the input even if it had been previously counted
