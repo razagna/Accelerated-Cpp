@@ -17,6 +17,7 @@ For every word in the input, if its the first word entered then its length will 
 The program assumes the user inputs the correct number of data in the correct order. It expects an indefinite number of students, so the read statement for student names is in an outer while loop. Inside the loop, the student name is pushed to the names `vector` and the midterm grade, the final grade and 5 homework grades are used to calculate the final grade, which gets pushed to the grade `vector`. Once the loop exits, the two vectors are iterated through via index to output the result. The solution can be found in [q05](q05.cpp). 
 
 #### Q3-6. The average-grade computation in §3.1/36 might divide by zero if the student didn't enter any grades. Division by zero is undefined in C++, which means that the implementation is permitted to do anything it likes. What does your C++ implementation do in this case? Rewrite the program so that its behavior does not depend on how the implementation treats division by zero.
+The default behavior of the **gcc** compiler in use is to throw an exception when dividing by 0. To avoid producing garbage or undefined results, the midterm and final variables are initialized to 0 and if no homework grades are entered the total homework grade is set to 0 instead of dividing the sum by the count. The solution can be found in [q06](q06.cpp). 
 
 [^1]: the hint isn't clear enough for me
 [^2]: the remainder value isn't taken into account so the result isn't accurate
